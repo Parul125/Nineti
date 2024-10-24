@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOE - Modular Energy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="feat">
+                <img src="nineti.jpg" alt="Nineti Logo" class="logo-img">
+            </div>
+            <h1 class="logo">MOE - Das modulare Balkonkraftwerk mit Speicher</h1>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#hero">ABOUT</a></li>
+                    <li><a href="#features">FEATURES</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    <audio id="click-sound">
+        <source src="Cinelax.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <button id="play-sound">Play Sound</button>
+    <button id="stop-sound">Stop Sound</button>
+    
+    <script>
+        const audio = document.getElementById('click-sound');
+        const playButton = document.getElementById('play-sound');
+        const stopButton = document.getElementById('stop-sound');
+    
+        playButton.addEventListener('click', function() {
+            audio.play();
+        });
+    
+        stopButton.addEventListener('click', function() {
+            audio.pause(); // Stop playback
+            audio.currentTime = 0; // Reset to the beginning
+        });
+    </script>
+
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-container">
+            <h2>Power Your Future with Modular Energy</h2>
+            <p>Affordable , Sustainable and Scalable Energy Solutions</p>
+            <a href="#features" class="cta-btn">LEARN MORE</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container2">
+            <h2>Why Choose MOE?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <img src="friendly.png" alt="Eco-friendly">
+                    <h3>Eco-friendly</h3>
+                    <p>Green energy solutions that support the environment.</p>
+                </div>
+                <div class="feature">
+                    <img src="scalable.png" alt="Scalable">
+                    <h3>Scalable</h3>
+                    <p>Our modular energy system grows with your needs.</p>
+                </div>
+                <div class="feature">
+                    <img src="affordable.png" alt="Affordable">
+                    <h3>Affordable</h3>
+                    <p>Cost-effective solutions accessible to everyone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+
+    <section id="gallery">
+        <div class="container2">
+            <h2>GALLERY</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="one.jpeg" alt="Project Image 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="two.jpeg" alt="Project Image 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="three.jpeg" alt="Project Image 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="four.jpeg" alt="Project Image 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="five.jpeg" alt="Project Image 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="six.jpeg" alt="Project Image 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="seven.jpeg" alt="Project Image 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="eight.jpeg" alt="Project Image 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="nine.jpeg" alt="Project Image 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="ten.jpeg" alt="Project Image 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="eleven.jpeg" alt="Project Image 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="twelve.jpeg" alt="Project Image 4">
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="contact">
+        <div class="container2">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to contact us!</p>
+            
+            <!-- Contact Form (Optional) -->
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+    
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container2">
+            <p>&copy; 2024 Nineti GmbH | Modular Energy Solutions | Stuttgart, Germany</p>
+            <ul>
+                <li><a href="https://www.facebook.com/moebalkonkraftwerk/">Facebook</a></li>
+                <li><a href="https://www.linkedin.com/company/ninetigmbh/">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/moe_balkonkraftwerk/">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

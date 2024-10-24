@@ -1,0 +1,241 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #003666;
+    color: white;
+    padding: 20px 0;
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+}
+
+header .logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#contact {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact button {
+    padding: 10px 20px;
+    background-color: #006633;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+header nav ul {
+    list-style: none;
+    float: right;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.container2 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* Hero Section */
+#hero {
+    background: url('moe.jpeg') no-repeat center center/cover;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+#hero h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #003666;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Features Section */
+.features-section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.features-section h2 {
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature {
+    width: 30%;
+}
+
+.feature img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #003666;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#gallery {
+    padding: 50px 0;
+    background-color:beige;
+    text-align: center;
+}
+
+#gallery h2 {
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#hero h2, #hero p, #hero .cta-btn {
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 1s forwards; /* Apply fadeIn animation */
+}
+
+#hero h2 {
+    animation-delay: 0.2s; /* Delay for h2 */
+}
+
+#hero p {
+    animation-delay: 0.4s; /* Delay for paragraph */
+}
+
+#hero .cta-btn {
+    animation-delay: 0.6s; /* Delay for button */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
